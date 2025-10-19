@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <h2>مرحباً بك في لوحة التحكم</h2>
+            
+            <div class="user-info">
+                <p><strong>البريد الإلكتروني:</strong> <span id="user-email"></span></p>
+                <p><strong>وقت تسجيل الدخول:</strong> <span id="login-time"></span></p>
+            </div>
+            
+            <div class="actions">
+                <button onclick="viewUsers()" class="btn">عرض المستخدمين المسجلين</button>
+                <button onclick="logout()" class="btn logout">تسجيل الخروج</button>
+            </div>
+            
+            <div id="users-list" class="users-list" style="display: none;">
+                <h3>المستخدمين المسجلين:</h3>
+                <div id="users-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
